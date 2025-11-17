@@ -1,0 +1,4 @@
+fastapi[standard]==0.121.2
+googletrans==4.0.2
+gTTS==2.5.4
+uvicorn==0.38.0
