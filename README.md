@@ -8,14 +8,18 @@ docker run -d -p 8000:8000 ghcr.io/memodack/translator:latest
 
 ## Development
 
-Run dev service with docker compose.
-
 ```bash
-make dev
+python3 -m venv .venv
 ```
 
-Build multi-arch image.
+```bash
+. .venv/bin/activate
+```
 
 ```bash
-make build
+pip3 install -r requirements.txt
+```
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 fastapi dev main.py
 ```

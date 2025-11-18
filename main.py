@@ -2,7 +2,6 @@ import asyncio
 import base64
 import io
 
-import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
